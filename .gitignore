@@ -1,0 +1,21 @@
+.env
+
+# ── Python ────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+**.xlsx
+todo.txt
+
+Diagram/
+diagram/
