@@ -10,5 +10,5 @@
     "type": "python",
     "path": "cmdb/createCMDB.py"
   },
-  "requirements": "requirements.txt"
+  "requirements": "cmdb/requirements.txt"
 }

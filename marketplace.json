@@ -1,11 +1,14 @@
 {
   "schema_version": "1.0",
   "metadata": {
-    "name": "sre-agent-marketplace-test",
+    "name": "sre-test-marketplace",
     "description": "Collection of SRE Agent skills",
-    "version": "0.1.0"
+    "version": "0.1.0",
+    "author": "Benno"
   },
-  "skills": [
-    { "path": "plugins/cmdb/marketplace.json" }
+  "plugins": [
+    {
+      "path": "cmdb/marketplace.json"
+    }
   ]
 }
