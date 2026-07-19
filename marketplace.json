@@ -1,14 +1,11 @@
 {
   "schema_version": "1.0",
   "metadata": {
-    "name": "cmdb",
-    "description": "Skill for CMDB exporters and automation",
-    "version": "0.1.0",
-    "author": "Benno"
+    "name": "sre-agent-marketplace-test",
+    "description": "Collection of SRE Agent skills",
+    "version": "0.1.0"
   },
-  "entrypoint": {
-    "type": "python",
-    "path": "cmdb/createCMDB.py"
-  },
-  "requirements": "requirements.txt"
+  "skills": [
+    { "path": "plugins/cmdb/marketplace.json" }
+  ]
 }

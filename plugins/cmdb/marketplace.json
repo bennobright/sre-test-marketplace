@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "metadata": {
+    "name": "cmdb",
+    "description": "Skill for CMDB exporters and automation",
+    "version": "0.1.0",
+    "author": "Benno"
+  },
+  "entrypoint": {
+    "type": "python",
+    "path": "cmdb/createCMDB.py"
+  },
+  "requirements": "requirements.txt"
+}
