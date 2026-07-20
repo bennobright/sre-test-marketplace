@@ -11,7 +11,7 @@
     {
       "name": "cmdb-generator",
       "description": "Generate CMDB.",
-      "source": "./plugins/cmdb"
+      "source": "./plugin/cmdb"
     }
   ]
 }
