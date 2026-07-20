@@ -1,14 +1,17 @@
 {
-  "schema_version": "1.0",
+  "name": "sre-agent-marketplace-test",
+  "owner": {
+    "name": "CognizantCIS"
+  },
   "metadata": {
-    "name": "sre-test-marketplace",
-    "description": "Collection of SRE Agent skills",
-    "version": "0.1.0",
-    "author": "Benno"
+    "description": "Custom Plugins.",
+    "version": "1.2.0"
   },
   "plugins": [
     {
-      "path": "cmdb/marketplace.json"
+      "name": "cmdb-generator",
+      "description": "Generate CMDB.",
+      "source": "./cmdb"
     }
   ]
 }
