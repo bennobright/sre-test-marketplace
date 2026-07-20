@@ -1,0 +1,6 @@
+{
+  "name": "cmdb-generator",
+  "description": "Generate CMDB inventory of Azure resources as an Excel workbook.",
+  "license": "MIT",
+  "skills": ["skills/"]
+}
