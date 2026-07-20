@@ -8,7 +8,7 @@
   },
   "entrypoint": {
     "type": "python",
-    "path": "cmdb/createCMDB.py"
+    "path": "plugin/cmdb/createCMDB.py"
   },
-  "requirements": "cmdb/requirements.txt"
+  "requirements": "plugin/cmdb/requirements.txt"
 }
