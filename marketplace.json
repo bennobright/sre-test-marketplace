@@ -12,6 +12,11 @@
       "name": "cmdb-generator",
       "description": "Generate CMDB.",
       "source": "./plugin/cmdb"
+    },
+     {
+      "name": "diagram_generator",
+      "description": "Generate Diagram.",
+      "source": "./plugin/diagramGenerator"
     }
   ]
 }
