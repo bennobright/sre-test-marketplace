@@ -1,0 +1,6 @@
+{
+  "name": "diagram_generator",
+  "description": "Generate Azure VNet/Subnet/NIC dependency JSON and produce diagrams. Triggered when the user asks to visualize network dependencies.",
+  "license": "MIT",
+  "skills": ["skills/"]
+}
