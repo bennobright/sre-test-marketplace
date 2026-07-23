@@ -37,5 +37,20 @@ This skill generates a dependency map of Virtual Networks, Subnets, NICs, and at
    * This produces one PNG file per VNet inside the `diagram/` folder (e.g. `diagram/<vnetName>_Diagram.png`).
 
 5. **Save and share**:
-   * Persist each generated PNG using SaveFileToBlob and present the diagrams inline to the user.
-   * Also share the raw JSON file (`diagram/vnet_subnet_nic.json`) as a download link.
+   * Persist all generated files using SaveFileToBlob.
+   * Present the output as **download links only** (do NOT embed images inline). This keeps the response compact and avoids excessive scrolling.
+   * Format the output as a list with the JSON file first, followed by each diagram PNG with its VNet name:
+ 
+     ```
+     **Generated Files:**
+ 
+     1. [Download VNet Dependency JSON](link-to-json)
+ 
+     **Diagrams:**
+     2. [vnet-name-1 Diagram](link-to-png)
+     3. [vnet-name-2 Diagram](link-to-png)
+     4. [vnet-name-3 Diagram](link-to-png)
+     ...
+     ```
+ 
+   * Do NOT use `![image](...)` markdown syntax. Use `[text](link)` download links only.
