@@ -2,5 +2,13 @@
   "name": "diagram_generator",
   "description": "Generate Azure VNet/Subnet/NIC dependency JSON and produce diagrams. Triggered when the user asks to visualize network dependencies.",
   "license": "MIT",
-  "skills": ["skills/"]
+  "skills": [
+    "skills/"
+  ],
+  "mcpServers": {
+    "diagram_mcp": {
+      "type": "sse",
+      "url": "http://acicissrediagrammcp39381.eastus2.azurecontainer.io:8000/mcp"
+    }
+  }
 }

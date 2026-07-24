@@ -30,11 +30,18 @@ This skill generates a dependency map of Virtual Networks, Subnets, NICs, and at
 
 4. **Render the diagrams using vnetDiagram.py**:
    * Confirm that `diagram/vnet_subnet_nic.json` was generated successfully in the previous step.
-   * Run the rendering script from the same working directory:
-     ```bash
-     python3 vnetDiagram.py
-     ```
-   * This produces one PNG file per VNet inside the `diagram/` folder (e.g. `diagram/<vnetName>_Diagram.png`).
+   * Check if graphviz is installed on the host system (e.g., by running dot -V).
+   * If graphviz is installed:
+      * Run the rendering script from the same working directory:
+      ```bash
+      python3 vnetDiagram.py
+      ```
+      * This produces one PNG file per VNet inside the `diagram/` folder (e.g. `diagram/<vnetName>_Diagram.png`).
+   * If graphviz is installed:
+      * Do NOT run vnetDiagram.py.
+      * Instead, invoke the connected diagram_mcp server configured in the plugin.
+      * Pass the generated diagram/vnet_subnet_nic.json data to the MCP tool to render the diagrams remotely.
+      * Ensure the resulting PNG diagrams from the MCP server are saved to the local diagram/ folder.
 
 5. **Save and share**:
    * Persist all generated files using SaveFileToBlob.
